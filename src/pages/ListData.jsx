@@ -21,16 +21,7 @@ const ListData = ({ product }) => {
     if (counter <= 0) {
         decrementCounter = () => setCounter(0);
     }
-    // if (window.localStorage.getItem("cartItems")) {
-    //     let x = window.localStorage.getItem("cartItems");
-    //     console.log(x, counter);
-    //     let x1 = Number(x) + Number(1);
-    //     console.log(x1);
-    //     window.localStorage.setItem("cartItems", x1);
-    // }
-    // else {
-    //     window.localStorage.setItem("cartItems", 0);
-    // }
+    
     return (
 
         <div className="container" style={{ border: "1px solid black", paddingTop: "10px", paddingBottom: "10px", marginTop: "10px", borderRadius: "10px" }}>
@@ -54,10 +45,10 @@ const ListData = ({ product }) => {
                 <div className="col-sm-2 text-center col-2 ">
                     <p className="mb-0">{product.dish_calories} calories</p>
                 </div>
-                <div className="col-sm-2 col-2">
+                <div className="col-sm-2 col-3">
                     <img
                         alt={product.dish_name}
-                        style={{ margin: "0 auto", maxHeight: "100px", maxWidth: "100px", borderRadius: "5px" }}
+                        style={{ margin: "0 auto", maxHeight: "80px", maxWidth: "80px", borderRadius: "5px" }}
                         src={product.dish_image} className="img-fluid d-block" />
                 </div>
 
