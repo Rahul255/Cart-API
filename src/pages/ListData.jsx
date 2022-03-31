@@ -35,11 +35,12 @@ const ListData = ({ product }) => {
                     <h5 >{product.dish_name}</h5>
                     <p >{product.dish_currency}: {(product.dish_price)} </p>
                     <p >{product.dish_description}</p>
+                    {product.dish_Availability && 
                     <div>
                         <button onClick={incrementCounter} >+</button>
                         {' '}{counter}{' '}
                         <button onClick={decrementCounter} >-</button>
-                    </div>
+                    </div> }
                     {product.addonCat.length > 0 ? (<p style={{ color: "red", paddingTop: '10px' }}>customization available</p>) : ''}
                 </div>
                 <div className="col-sm-2 text-center col-2 ">
