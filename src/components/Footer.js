@@ -8,7 +8,7 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-sm-6 col-12">
-            <p className="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+            <p className="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
             </p>
           </div>
           <div className="col-md-4 col-sm-6 col-12">
