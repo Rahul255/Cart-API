@@ -36,7 +36,7 @@ const ListData = ({ product }) => {
                     <p >{product.dish_currency}: {(product.dish_price)} </p>
                     <p >{product.dish_description}</p>
                     {product.dish_Availability && 
-                    <div>
+                    <div >
                         <button onClick={incrementCounter} >+</button>
                         {' '}{counter}{' '}
                         <button onClick={decrementCounter} >-</button>
